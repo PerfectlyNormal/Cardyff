@@ -2,17 +2,17 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>Cardyff</id>
-    <version>1.0.0</version>
+    <version>1.1.0</version>
     <authors>PerfectlyNormal</authors>
     <licenseUrl>https://opensource.org/licenses/MIT</licenseUrl>
     <projectUrl>https://github.com/PerfectlyNormal/Cardyff</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Create Actionable Messages for Office365 and related tools</description>
-    <releaseNotes>Initial release</releaseNotes>
+    <releaseNotes>Fix serialization of enums to their string values, not integer</releaseNotes>
     <copyright>Copyright 2018 Per Christian B. Viken</copyright>
     <tags>office365 actionablemessage messagecard</tags>
     <dependencies>
-      <dependency id="Newtonsoft.Json" version="[10,11)" />
+      <dependency id="Newtonsoft.Json" version="[10.0,11.0)" />
     </dependencies>
   </metadata>
   <files>

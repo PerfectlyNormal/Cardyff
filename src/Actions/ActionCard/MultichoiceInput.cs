@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using Cardyff.Actions.ActionCard.Multichoice;
 using Newtonsoft.Json;
+using Newtonsoft.Json.Converters;
 
 namespace Cardyff.Actions.ActionCard
 {
@@ -23,6 +24,7 @@ namespace Cardyff.Actions.ActionCard
         public bool MultiSelect { get; set; } = false;
 
         [JsonProperty("style")]
+        [JsonConverter(typeof(StringEnumConverter))]
         public Style Style { get; set; } = Style.Normal;
     }
 }

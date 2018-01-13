@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using Cardyff.Actions.HttpPost;
 using Newtonsoft.Json;
+using Newtonsoft.Json.Converters;
 
 namespace Cardyff.Actions
 {
@@ -45,6 +46,7 @@ namespace Cardyff.Actions
         /// If not specified, application/json is assumed.
         /// </summary>
         [JsonProperty("bodyContentType")]
+        [JsonConverter(typeof(StringEnumConverter))]
         public BodyContentType BodyContentType { get; set; } = BodyContentType.Json;
     }
 }
